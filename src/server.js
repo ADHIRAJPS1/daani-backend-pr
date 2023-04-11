@@ -12,7 +12,7 @@ const ImgCtrl = require('./Features/Images/Controller/imageController');
 
 
 // databases 
-require('./Database/index');
+// require('./Database/index');
 // const dbconn = require('./Database/dbConn');
 
 // server header access 
