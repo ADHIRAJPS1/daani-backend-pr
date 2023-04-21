@@ -3,10 +3,11 @@ const sequelize = require('../../../dbConn');
 
 
 // this is Blog table model which will be used to insert values into db based on this model
-const Blog = sequelize.define('Blog',{
+const Blog = sequelize.define('Blogs',{
     blogid: {
         type: DataTypes.UUID,
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
     categoryid:  {
         type: DataTypes.UUID,
@@ -24,18 +25,13 @@ const Blog = sequelize.define('Blog',{
     description: DataTypes.STRING,
     featuredImg: DataTypes.STRING,
     youtubeUrl: DataTypes.STRING,
-    createdat: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW
-    },
     status: DataTypes.BOOLEAN
 },{
-    tableName: 'Blog',
-    createdAt: true,
-    updatedAt: true,
-
+    tableName: 'Blog'
 });
 
-console.log("blog table =",Blog === sequelize.models.Blog);
+console.log("blog table =",Blog === sequelize.models.Blogs);
+
+// Blog.sync({force: true}).then(()=>console.log("created BLOG SCHEMA"));
 module.exports = Blog;
 

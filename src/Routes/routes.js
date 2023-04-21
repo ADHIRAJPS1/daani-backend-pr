@@ -10,6 +10,11 @@ const imgMiddleware = require("../Features/Images/Middleware/imageMiddleware");
 Routes.get('/getblogs', blogCtrl.getBlogs);
 Routes.get('/blog/:id', blogCtrl.BlogById);
 Routes.post('/newblog', blogCtrl.newBlog);
+Routes.get('/blogs/:categoryid', blogCtrl.getByCategory);
+Routes.get('/ablog/:authorid', blogCtrl.blogbyauthor);
+Routes.get('/sblog/:status', blogCtrl.blogbystatus);
+Routes.get('/tblog/:title', blogCtrl.getBlogsByTitle);
+
 Routes.post('/uploadImg', imgMiddleware.single("image"), imgCtrl.saveImg );
 Routes.post('/s3imgUpload', imgCtrl.s3upload);
 
