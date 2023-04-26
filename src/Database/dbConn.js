@@ -3,7 +3,7 @@ const dotenv = require("dotenv")
 const configure = require("./Configuration/dbconfigure");   // db configuration values
 dotenv.config()     //environment values
 
-const sequelize = new Sequelize('postgres://postgres:adhirajA@1@localhost:5432/daanibackend',{
+const sequelize = new Sequelize('postgres://doadmin:AVNS_dW7UrJh65MuHdero3eN@db-postgresql-nyc1-63522-do-user-13993963-0.b.db.ondigitalocean.com:25060/defaultdb',{
     logging: false
 });
 // "postgres://postgres:adhirajA@1@localhost:5432/daanibackend"
