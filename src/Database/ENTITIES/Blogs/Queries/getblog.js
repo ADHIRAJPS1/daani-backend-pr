@@ -47,11 +47,12 @@ const getBlogsByTitle = async(title) => {
         console.log("getblog =",title);
         let data = await BlogSch.findAll({ where: {
             title: {
-                [Op.like]: title
+                [Op.like]: `%${title}%` 
             }
         }});
+        console.log("data =",data);
         return data;
-    }catch(err) {
+    }catch(err) { 
         return err;
     }
 }
