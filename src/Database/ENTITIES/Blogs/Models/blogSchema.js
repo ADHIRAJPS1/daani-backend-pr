@@ -30,7 +30,7 @@ const Blog = sequelize.define('Blogs',{
     tableName: 'Blog'
 });
 
-console.log("blog table =",Blog === sequelize.models.Blogs);
+console.log("blog table schema =",Blog === sequelize.models.Blogs);
 
 // Blog.sync({force: true}).then(()=>console.log("created BLOG SCHEMA"));
 module.exports = Blog;

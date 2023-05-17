@@ -21,3 +21,4 @@ Routes.post('/s3imgUpload', imgCtrl.s3upload);
 // Routes.post('/upload', a);
 
 module.exports = Routes;
+ 
