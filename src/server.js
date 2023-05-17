@@ -5,7 +5,7 @@ const path = require('path');
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 2000;
 
 const Routes = require('./Routes/routes');
 const ImgCtrl = require('./Features/Images/Controller/imageController');
