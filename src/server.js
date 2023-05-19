@@ -37,6 +37,7 @@ app.use(cors());
 // API request
 app.get('/', (req,res)=>{res.send("THIS IS THE BACKEND SERVER ")});
 app.get('/upload', ImgCtrl.imgView);
+app.get('/sitemap', (req,res) => { res.render("sitemap") } );
 
 app.use('/api/daani', Routes);
 

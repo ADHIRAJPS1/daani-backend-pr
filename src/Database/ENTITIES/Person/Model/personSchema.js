@@ -18,7 +18,7 @@ const PersonSchema = sequelize.define('Person',{
 try{
     console.log("Person database = ", PersonSchema === sequelize.models.Person);
 }catch(err){
-    console.log("error occured");
+    console.log("error occured = ",err);
 }
 
 module.exports = PersonSchema;

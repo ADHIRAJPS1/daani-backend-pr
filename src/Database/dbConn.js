@@ -6,9 +6,9 @@ const path = require("path");
 
 dotenv.config()     //environment values
 
-// const sequelize = new Sequelize('postgres://postgres:adhirajA@1@localhost:5432/daanibackend', {
-//     logging: false
-// });
+const sequelize = new Sequelize('postgres://postgres:adhirajA@1@localhost:5432/daanibackend', {
+    logging: false
+});
 
 // db string url
 // postgres:doadmin:AVNS_dW7UrJh65MuHdero3eN@db-postgresql-nyc1-63522-do-user-13993963-0.b.db.ondigitalocean.com:25060/defaultdb
@@ -19,25 +19,25 @@ dotenv.config()     //environment values
 
 // default init function to connect to database
 
-const dbConfig = {
-	"dialect": "postgres",
-	'username' : 'testdb',
-	'password' : 'AVNS_w5fHTNg4yPx4_Xcoqs_',
-	'host' : 'dbtest-pg-do-user-13993963-0.b.db.ondigitalocean.com',
-	'port' : 25060,
-	'database' :'defaultdb',
-	'dialectOptions': {
-        ssl: {
-            require: true,
-            rejectUnauthorized: false,
-            ca: fs.readFileSync(path.join(__dirname, '../assets/ca-certificate.crt'))
+// const dbConfig = {
+// 	"dialect": "postgres",
+// 	'username' : 'testdb',
+// 	'password' : 'AVNS_w5fHTNg4yPx4_Xcoqs_',
+// 	'host' : 'dbtest-pg-do-user-13993963-0.b.db.ondigitalocean.com',
+// 	'port' : 25060,
+// 	'database' :'defaultdb',
+// 	'dialectOptions': {
+//         ssl: {
+//             require: true,
+//             // rejectUnauthorized: false,
+//             ca: fs.readFileSync(path.join(__dirname, '../assets/ca-certificate.crt'))
             
-        }
-    },
-	'logging':false
-};
+//         }
+//     },
+// 	'logging':false
+// };
 
-const sequelize = new Sequelize(dbConfig.database, dbConfig.user, dbConfig.database.password, dbConfig);
+// const sequelize = new Sequelize(dbConfig.database, dbConfig.user, dbConfig.database.password, dbConfig);
 
 init = async () => {
     try {

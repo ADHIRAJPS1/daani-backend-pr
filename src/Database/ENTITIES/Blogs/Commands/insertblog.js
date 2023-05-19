@@ -1,12 +1,12 @@
 const Blog  = require("../Models/blogSchema");
-// const { v4: uuidv4 } = require("uuid");
+const { v4: uuidv4 } = require("uuid");
 
-// function uniqueid(){
-//     return uuidv4();
-// }
+function uniqueid(){
+    return uuidv4();
+}
 
-// console.log(uniqueid());
-// console.log("uuid = ",uuidv4());
+console.log(uniqueid());
+console.log("uuid = ",uuidv4());
 
 const saveBlog = async (data) => {
     console.log("insert blog db =",data);

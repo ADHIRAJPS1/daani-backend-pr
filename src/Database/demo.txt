@@ -1,0 +1,31 @@
+{
+    "message": {
+        "name": "SequelizeDatabaseError",
+        "parent": {
+            "length": 104,
+            "name": "error",
+            "severity": "ERROR",
+            "code": "42P01",
+            "position": "161",
+            "file": "parse_relation.c",
+            "line": "1395",
+            "routine": "parserOpenTable",
+            "sql": "SELECT \"id\", \"blogid\", \"categoryid\", \"organizationid\", \"authorid\", \"title\", \"description\", \"featuredImg\", \"youtubeUrl\", \"status\", \"createdAt\", \"updatedAt\" FROM \"Blog\" AS \"Blogs\";"
+        },
+        "original": {
+            "length": 104,
+            "name": "error",
+            "severity": "ERROR",
+            "code": "42P01",
+            "position": "161",
+            "file": "parse_relation.c",
+            "line": "1395",
+            "routine": "parserOpenTable",
+            "sql": "SELECT \"id\", \"blogid\", \"categoryid\", \"organizationid\", \"authorid\", \"title\", \"description\", \"featuredImg\", \"youtubeUrl\", \"status\", \"createdAt\", \"updatedAt\" FROM \"Blog\" AS \"Blogs\";"
+        },
+        "sql": "SELECT \"id\", \"blogid\", \"categoryid\", \"organizationid\", \"authorid\", \"title\", \"description\", \"featuredImg\", \"youtubeUrl\", \"status\", \"createdAt\", \"updatedAt\" FROM \"Blog\" AS \"Blogs\";",
+        "parameters": {}
+    }
+}
+
+// empty database response
